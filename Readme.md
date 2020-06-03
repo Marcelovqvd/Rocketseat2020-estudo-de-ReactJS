@@ -47,8 +47,8 @@ Ou seja, é possível criar um componente cada vez que a lógica de uma funciona
 
 Em React, o componente é uma função que retorna um HTML.
 
-```jsx
-    function App() {
+```
+		function App() {
 			return <h1>Retorno</h1>
 		}
 ```
@@ -61,7 +61,7 @@ Criamos componentes para reaproveitar código.
 
 As propriedades são passadas como parâmetro da função.
 
-```jsx
+```
     function Heade(props) {
 			return (
 				<header>
@@ -73,7 +73,7 @@ As propriedades são passadas como parâmetro da função.
 
 - Desestruturando as props:
 
-    ```jsx
+    ```
     function Heade({ title }) {
     			return (
     				<header>
@@ -87,7 +87,7 @@ As propriedades são passadas como parâmetro da função.
 
     Dentro das props há a propriedade children. Children é todo o conteúdo que a tag do componente pai recebeu, ou seja, serve para acessar todo o conteúdo do componente. É criada pelo próprio React.
 
-    ```jsx
+    ```
         function Heade({ title, children }) {
     			return (
     				<header>
