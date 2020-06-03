@@ -1,8 +1,17 @@
 import React from 'react';
 
+import Header from './components/Header';
+import Title from './components/Title';
+
 function App() {
   return (
-    <h1>Home</h1>
+    <>
+      <Header />
+      <Title title="título via props" />
+      <Title title="outro título via props">
+        <p>children</p>
+      </Title>
+    </>
   );
 }
 
