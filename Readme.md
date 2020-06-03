@@ -1,4 +1,5 @@
-# React - Conceitos
+# Estudos sobre React
+### baseado no bootcamp Rocketseat Gostack 2020
 
 É biblioteca para construção de interfaces e para desenvolvimento de SPA (Single-Page Applications). Com o SPA, o back-end apenas retorna JSON e o front-end é quem controla as rotas e o consumo e renderização dos dados. Então as páginas da aplicação não precisam ser rotas no back-end. O roteamento da aplicação fica no front-end. Daí o conceito SPA - tudo fica em uma página só e por isso, o browser nunca recarrega. Há assim, formas de roteamento para alternar de uma página a outra sem recarregar o browser. Isso contribui para a performance e usabilidade.
 
