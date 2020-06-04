@@ -94,3 +94,44 @@ function Header({ title, children }) {
     	</header>
     	)
     }
+
+    # Estado
+
+O React permite que a interface seja atualizada em tempo real quando uma variável dentro do componente tem seu valor alterado. Para isso utiliza-se o conceito de Estado.
+
+Para utilizar o Estado, deve-se importar o useState.
+
+### usestate()
+
+
+    import React, { usestate } from 'react'
+
+
+O useState retorna um array com duas posições: 
+
+1. variável com seu valor inicial;
+2. função para atualizar o valor inicial.
+
+
+    const projects = usestate([])
+
+
+Desestruturando:
+
+    const [projects, setProjects] = useState([])
+
+
+### Imutabilidade
+
+Para utilizar o Estado não podemos mudar a variável de uma maneira direta, ou seja, incluir ou excluir informações, mudar seu valor, etc. A variável deve ser imutável. O que se deve fazer é recriar aquela informações com as alterações que se espera.
+
+Nesse caso, em se tratando de arrays, o método push não pode ser utilizado, pois altera o valor original de uma variável. O que se deve fazer é recriar o array, gerar um novo array, um novo valor.
+
+Recriando um novo array utilizando o spread operator:
+
+
+        const [ projects, setProjects ] = useState([ 'projeto', 'outro projeto2' ]);
+
+        function handleAddPorjects() {
+            setProjects([ ...projects, 'novo projeto' ]);
+        }

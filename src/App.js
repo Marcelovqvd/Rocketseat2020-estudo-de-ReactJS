@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from './components/Header';
 import Title from './components/Title';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Title title="outro título via props">
         <p>children</p>
       </Title>
+      <Projects />
     </>
   );
 }
