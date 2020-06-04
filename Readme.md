@@ -95,7 +95,8 @@ function Header({ title, children }) {
     	)
     }
 
-    # Estado
+
+# Estado
 
 O React permite que a interface seja atualizada em tempo real quando uma variável dentro do componente tem seu valor alterado. Para isso utiliza-se o conceito de Estado.
 
@@ -121,7 +122,7 @@ Desestruturando:
     const [projects, setProjects] = useState([])
 
 
-### Imutabilidade
+# Imutabilidade
 
 Para utilizar o Estado não podemos mudar a variável de uma maneira direta, ou seja, incluir ou excluir informações, mudar seu valor, etc. A variável deve ser imutável. O que se deve fazer é recriar aquela informações com as alterações que se espera.
 
